@@ -13,20 +13,6 @@
         keymap {
                 compatible = "zmk,keymap";
 
-
-          // CM: this config is from sam; i can't use the default because
-          // i only have 5 keys per side
-          default_layer {
-             label = "Colmak";
-             bindings = <
-                  <<<EXTRA>>>     &kp      Q &kp      W &kp       F    &kp        P    &kp B              &kp J          &kp        L    &kp        U &kp      Y &kp   SEMI    <<<EXTRA>>>
-                  <<<EXTRA>>>     &hm LGUI A &hm LALT R &hm LCTRL S    &hm LSHIFT T    &kp G              &kp M          &hm RSHIFT N    &hm  RCTRL E &hm RALT I &hm RGUI O    <<<EXTRA>>>
-                  <<<EXTRA>>>     &kp      Z &kp      X &kp       C    &kp        D    &kp V              &kp K          &kp        H    &kp     CMMA &kp    DOT &kp   FSLH    <<<EXTRA>>>
-                                                  &lt MEDIA ESC  &lt NUMSYM RET  &lt FUNKEY TAB     &kp       SPC  &kp       BSPC  &lt NAVI DEL
-             >;
-         };
-
-/* // CM: this was the default from zmk-config
                 default_layer {
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
@@ -41,8 +27,6 @@
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-*/
-
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
@@ -62,7 +46,7 @@
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |  =  |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
